@@ -430,7 +430,7 @@
           <!-- Barra vermelha 5 quilos -->
           <rect x="0" y="128" width="20" height="132" rx="6" fill="#D32F2F"/>
           <text x="10" y="194" text-anchor="middle" fill="white" font-size="10" font-weight="700" transform="rotate(-90,10,194)">5 quilos</text>
-          <!-- Separadores horizontais (3 linhas = 4 rows) -->
+          <!-- Separadores horizontais -->
           <line x1="16" y1="122" x2="534" y2="122" stroke="#C0C0C0" stroke-width="1.5"/>
           <line x1="16" y1="205" x2="534" y2="205" stroke="#C0C0C0" stroke-width="1.5"/>
           <line x1="16" y1="288" x2="534" y2="288" stroke="#C0C0C0" stroke-width="1.5"/>
@@ -446,12 +446,7 @@
           <!-- PREMIO (row 27 esquerda) -->
           <rect x="62" y="8" width="186" height="110" rx="4" fill="#DCDCE0"/>
           <text x="155" y="70" text-anchor="middle" fill="#1D1D1F" font-size="24" font-weight="700">Pr&#234;mio</text>
-          <!-- Coluna central 11-14 -->
-          <text x="271" y="68" text-anchor="middle" fill="#555" font-size="13" font-weight="600">11</text>
-          <text x="271" y="164" text-anchor="middle" fill="#555" font-size="13" font-weight="600">12</text>
-          <text x="271" y="247" text-anchor="middle" fill="#555" font-size="13" font-weight="600">13</text>
-          <text x="271" y="330" text-anchor="middle" fill="#555" font-size="13" font-weight="600">14</text>
-          <!-- Celulas numeradas esquerda: 1-12 -->
+          <!-- Celulas numeradas esquerda 1-12 -->
           <!-- Row 28: 1-4 -->
           <rect x="62" y="124" width="92" height="39" rx="3" fill="#DCDCE0" stroke="#C4C4C4" stroke-width="0.5"/>
           <text x="108" y="149" text-anchor="middle" fill="#444" font-size="20">1</text>
@@ -479,20 +474,21 @@
           <text x="108" y="355" text-anchor="middle" fill="#444" font-size="20">11</text>
           <rect x="158" y="331" width="90" height="38" rx="3" fill="#DCDCE0" stroke="#C4C4C4" stroke-width="0.5"/>
           <text x="203" y="355" text-anchor="middle" fill="#444" font-size="20">12</text>
-          <!-- ===== CELULAS BLUE FIT (direita) - 18 total ===== -->
-          <!-- Row 27 direita: 3 sub-rows x 2 cols = 6 celulas -->
-          <rect x="294" y="8" width="118" height="35" rx="3" fill="#003087"/>
-          <text x="353" y="30" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
-          <rect x="416" y="8" width="116" height="35" rx="3" fill="#003087"/>
-          <text x="474" y="30" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
-          <rect x="294" y="45" width="118" height="35" rx="3" fill="#003087"/>
-          <text x="353" y="67" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
-          <rect x="416" y="45" width="116" height="35" rx="3" fill="#003087"/>
-          <text x="474" y="67" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
-          <rect x="294" y="82" width="118" height="36" rx="3" fill="#003087"/>
-          <text x="353" y="104" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
-          <rect x="416" y="82" width="116" height="36" rx="3" fill="#003087"/>
-          <text x="474" y="104" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <!-- ===== COLUNA CENTRAL: 4 celulas Blue Fit (11,12,13,14) ===== -->
+          <rect x="254" y="8" width="34" height="110" rx="3" fill="#003087"/>
+          <text x="271" y="68" text-anchor="middle" fill="#FFD700" font-size="7" font-weight="700" transform="rotate(-90,271,68)">BF</text>
+          <rect x="254" y="124" width="34" height="79" rx="3" fill="#003087"/>
+          <text x="271" y="164" text-anchor="middle" fill="#FFD700" font-size="7" font-weight="700" transform="rotate(-90,271,164)">BF</text>
+          <rect x="254" y="207" width="34" height="79" rx="3" fill="#003087"/>
+          <text x="271" y="247" text-anchor="middle" fill="#FFD700" font-size="7" font-weight="700" transform="rotate(-90,271,247)">BF</text>
+          <rect x="254" y="290" width="34" height="79" rx="3" fill="#003087"/>
+          <text x="271" y="330" text-anchor="middle" fill="#FFD700" font-size="7" font-weight="700" transform="rotate(-90,271,330)">BF</text>
+          <!-- ===== LADO DIREITO: 14 celulas Blue Fit ===== -->
+          <!-- Row 27 direita: 2 celulas altas (span full row height) -->
+          <rect x="294" y="8" width="118" height="110" rx="3" fill="#003087"/>
+          <text x="353" y="68" text-anchor="middle" fill="#FFD700" font-size="12" font-weight="700">BLUE FIT</text>
+          <rect x="416" y="8" width="116" height="110" rx="3" fill="#003087"/>
+          <text x="474" y="68" text-anchor="middle" fill="#FFD700" font-size="12" font-weight="700">BLUE FIT</text>
           <!-- Row 28 direita: 4 celulas -->
           <rect x="294" y="124" width="118" height="39" rx="3" fill="#003087"/>
           <text x="353" y="149" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
@@ -511,7 +507,7 @@
           <text x="353" y="272" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
           <rect x="416" y="248" width="116" height="38" rx="3" fill="#003087"/>
           <text x="474" y="272" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
-          <!-- Row 30 direita: 4 celulas (ultima com borda tracejada) -->
+          <!-- Row 30 direita: 4 celulas (ultima tracejada) -->
           <rect x="294" y="290" width="118" height="39" rx="3" fill="#003087"/>
           <text x="353" y="315" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
           <rect x="416" y="290" width="116" height="39" rx="3" fill="#003087"/>
