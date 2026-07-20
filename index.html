@@ -421,118 +421,105 @@
     <div class="saquinho-grid">
 
       <!-- DIAGRAMA SVG DO SAQUINHO - fiel à imagem original -->
-      <div class="saq-diagram" style="padding:16px;">
-        <svg width="300" height="400" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" font-family="Arial,sans-serif">
-
-          <!-- Fundo geral saquinho -->
-          <rect x="4" y="4" width="292" height="392" rx="12" fill="#F8FAFF" stroke="#C8D4E8" stroke-width="1.5"/>
-
-          <!-- Ondas topo (boca do saquinho) -->
-          <path d="M4 24 Q20 8 36 24 Q52 40 68 24 Q84 8 100 24 Q116 40 132 24 Q148 8 164 24 Q180 40 196 24 Q212 8 228 24 Q244 40 260 24 Q276 8 292 24" fill="none" stroke="#C8D4E8" stroke-width="1.5"/>
-
-          <!-- Faixa lateral "PRÊMIO" vermelha -->
-          <rect x="4" y="4" width="18" height="392" rx="0" fill="#D32F2F"/>
-          <rect x="4" y="4" width="18" height="392" rx="12 0 0 12" fill="#D32F2F"/>
-          <text x="13" y="220" text-anchor="middle" fill="#fff" font-size="9" font-weight="800" letter-spacing="1" transform="rotate(-90,13,220)">PRÊMIO PremiaPão</text>
-
-          <!-- Coluna de IDs de saquinho (27-30) -->
-          <rect x="26" y="80" width="22" height="310" rx="4" fill="#E8EFF8"/>
-          <text x="37" y="100" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">27</text>
-          <line x1="26" y1="108" x2="48" y2="108" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="37" y="184" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">28</text>
-          <line x1="26" y1="192" x2="48" y2="192" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="37" y="268" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">29</text>
-          <line x1="26" y1="276" x2="48" y2="276" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="37" y="352" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">30</text>
-
-          <!-- Bloco PRÊMIO principal (topo) -->
-          <rect x="50" y="32" width="90" height="46" rx="8" fill="#003087"/>
-          <text x="95" y="52" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="800">PRÊMIO</text>
-          <text x="95" y="68" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="7">Nome / Telefone</text>
-
-          <!-- Coluna central de IDs (11/12) -->
-          <rect x="146" y="32" width="22" height="358" rx="4" fill="#E8EFF8"/>
-          <text x="157" y="140" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">11</text>
-          <line x1="146" y1="196" x2="168" y2="196" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="157" y="300" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">12</text>
-
-          <!-- 18 ESPAÇOS BLUE FIT (3 colunas × 6 linhas) -->
-          <!-- Coluna A: x=50 -->
-          <!-- Coluna B: x=98 -->
-          <!-- Linha 1: y=80 (altura 55) -->
-          <!-- Cada espaço: 44x55 com gap 2 -->
-
-          <!-- Linha 1 (row 27, espaços 1-6) -->
-          <rect x="50" y="80" width="44" height="55" rx="4" fill="#003087"/>
-          <text x="72" y="100" text-anchor="middle" fill="#FFD700" font-size="7" font-weight="700">BLUE FIT</text>
-          <text x="72" y="113" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="6">espaço 1</text>
-
-          <rect x="96" y="80" width="48" height="55" rx="4" fill="#003087"/>
-          <text x="120" y="100" text-anchor="middle" fill="#FFD700" font-size="7" font-weight="700">BLUE FIT</text>
-          <text x="120" y="113" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="6">espaço 2</text>
-
-          <!-- Grade direita linha 1 (2 células) -->
-          <rect x="170" y="80" width="55" height="27" rx="3" fill="#F0F4FF" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="197" y="98" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">✓ 3</text>
-          <rect x="227" y="80" width="55" height="27" rx="3" fill="#F0F4FF" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="254" y="98" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">✓ 4</text>
-          <rect x="170" y="109" width="55" height="26" rx="3" fill="#F0F4FF" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="197" y="127" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">✓ 5</text>
-          <rect x="227" y="109" width="55" height="26" rx="3" fill="#F0F4FF" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="254" y="127" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">✓ 6</text>
-
-          <!-- Linha 2 (row 28, espaços 7-12) -->
-          <rect x="50" y="137" width="44" height="55" rx="4" fill="#003087"/>
-          <text x="72" y="157" text-anchor="middle" fill="#FFD700" font-size="7" font-weight="700">BLUE FIT</text>
-          <text x="72" y="170" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="6">espaço 7</text>
-
-          <rect x="96" y="137" width="48" height="55" rx="4" fill="#003087"/>
-          <text x="120" y="157" text-anchor="middle" fill="#FFD700" font-size="7" font-weight="700">BLUE FIT</text>
-          <text x="120" y="170" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="6">espaço 8</text>
-
-          <rect x="170" y="137" width="55" height="27" rx="3" fill="#F0F4FF" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="197" y="155" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">✓ 9</text>
-          <rect x="227" y="137" width="55" height="27" rx="3" fill="#F0F4FF" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="254" y="155" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">✓ 10</text>
-          <rect x="170" y="166" width="55" height="26" rx="3" fill="#F0F4FF" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="197" y="184" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">✓ 11</text>
-          <rect x="227" y="166" width="55" height="26" rx="3" fill="#F0F4FF" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="254" y="184" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">✓ 12</text>
-
-          <!-- Linha 3 (row 29, espaços 13-18) -->
-          <rect x="50" y="194" width="44" height="55" rx="4" fill="#003087"/>
-          <text x="72" y="214" text-anchor="middle" fill="#FFD700" font-size="7" font-weight="700">BLUE FIT</text>
-          <text x="72" y="227" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="6">espaço 13</text>
-
-          <rect x="96" y="194" width="48" height="55" rx="4" fill="#003087"/>
-          <text x="120" y="214" text-anchor="middle" fill="#FFD700" font-size="7" font-weight="700">BLUE FIT</text>
-          <text x="120" y="227" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="6">espaço 14</text>
-
-          <rect x="170" y="194" width="55" height="27" rx="3" fill="#F0F4FF" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="197" y="212" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">✓ 15</text>
-          <rect x="227" y="194" width="55" height="27" rx="3" fill="#F0F4FF" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="254" y="212" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">✓ 16</text>
-          <rect x="170" y="223" width="55" height="26" rx="3" fill="#F0F4FF" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="197" y="241" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">✓ 17</text>
-          <rect x="227" y="223" width="55" height="26" rx="3" fill="#F0F4FF" stroke="#C8D4E8" stroke-width="0.8"/>
-          <text x="254" y="241" text-anchor="middle" fill="#003087" font-size="8" font-weight="700">✓ 18</text>
-
-          <!-- Linha 4 (row 30, espaços bônus) -->
-          <rect x="50" y="251" width="44" height="55" rx="4" fill="#003087"/>
-          <text x="72" y="271" text-anchor="middle" fill="#FFD700" font-size="7" font-weight="700">BLUE FIT</text>
-          <text x="72" y="284" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="6">visib. extra</text>
-
-          <rect x="96" y="251" width="48" height="55" rx="4" fill="#003087"/>
-          <text x="120" y="271" text-anchor="middle" fill="#FFD700" font-size="7" font-weight="700">BLUE FIT</text>
-          <text x="120" y="284" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="6">visib. extra</text>
-
-          <!-- Espaços direitos restantes -->
-          <rect x="170" y="251" width="112" height="55" rx="3" fill="#F0F4FF" stroke="#C8D4E8" stroke-width="0.8" stroke-dasharray="3,2"/>
-          <text x="226" y="282" text-anchor="middle" fill="#AEAEB2" font-size="8">disponível</text>
-
-          <!-- Label total de espaços -->
-          <rect x="50" y="320" width="232" height="30" rx="6" fill="rgba(0,48,135,0.08)" stroke="rgba(0,48,135,0.2)" stroke-width="1"/>
-          <text x="166" y="340" text-anchor="middle" fill="#003087" font-size="9" font-weight="700">18 espaços exclusivos Blue Fit neste saquinho</text>
+      <div class="saq-diagram" style="padding:8px;">
+        <svg width="540" height="375" viewBox="0 0 540 375" xmlns="http://www.w3.org/2000/svg" font-family="Arial,sans-serif">
+          <!-- Fundo -->
+          <rect x="16" y="4" width="520" height="367" rx="10" fill="#EBEBEB" stroke="#C4C4C4" stroke-width="1.5"/>
+          <!-- Ondas topo -->
+          <path d="M16 18 Q28 6 40 18 Q52 30 64 18 Q76 6 88 18 Q100 30 112 18 Q124 6 136 18 Q148 30 160 18 Q172 6 184 18 Q196 30 208 18 Q220 6 232 18 Q244 30 256 18 Q268 6 280 18 Q292 30 304 18 Q316 6 328 18 Q340 30 352 18 Q364 6 376 18 Q388 30 400 18 Q412 6 424 18 Q436 30 448 18 Q460 6 472 18 Q484 30 496 18 Q508 6 520 18 Q532 30 536 18" fill="none" stroke="#C4C4C4" stroke-width="2"/>
+          <!-- Barra vermelha 5 quilos -->
+          <rect x="0" y="128" width="20" height="132" rx="6" fill="#D32F2F"/>
+          <text x="10" y="194" text-anchor="middle" fill="white" font-size="10" font-weight="700" transform="rotate(-90,10,194)">5 quilos</text>
+          <!-- Separadores horizontais (3 linhas = 4 rows) -->
+          <line x1="16" y1="122" x2="534" y2="122" stroke="#C0C0C0" stroke-width="1.5"/>
+          <line x1="16" y1="205" x2="534" y2="205" stroke="#C0C0C0" stroke-width="1.5"/>
+          <line x1="16" y1="288" x2="534" y2="288" stroke="#C0C0C0" stroke-width="1.5"/>
+          <!-- Separadores verticais -->
+          <line x1="58" y1="4" x2="58" y2="370" stroke="#C0C0C0" stroke-width="1.5"/>
+          <line x1="252" y1="4" x2="252" y2="370" stroke="#C0C0C0" stroke-width="1.5"/>
+          <line x1="290" y1="4" x2="290" y2="370" stroke="#C0C0C0" stroke-width="1.5"/>
+          <!-- Numeros de linha (27-30) -->
+          <text x="37" y="68" text-anchor="middle" fill="#666" font-size="14">27</text>
+          <text x="37" y="164" text-anchor="middle" fill="#666" font-size="14">28</text>
+          <text x="37" y="247" text-anchor="middle" fill="#666" font-size="14">29</text>
+          <text x="37" y="330" text-anchor="middle" fill="#666" font-size="14">30</text>
+          <!-- PREMIO (row 27 esquerda) -->
+          <rect x="62" y="8" width="186" height="110" rx="4" fill="#DCDCE0"/>
+          <text x="155" y="70" text-anchor="middle" fill="#1D1D1F" font-size="24" font-weight="700">Pr&#234;mio</text>
+          <!-- Coluna central 11-14 -->
+          <text x="271" y="68" text-anchor="middle" fill="#555" font-size="13" font-weight="600">11</text>
+          <text x="271" y="164" text-anchor="middle" fill="#555" font-size="13" font-weight="600">12</text>
+          <text x="271" y="247" text-anchor="middle" fill="#555" font-size="13" font-weight="600">13</text>
+          <text x="271" y="330" text-anchor="middle" fill="#555" font-size="13" font-weight="600">14</text>
+          <!-- Celulas numeradas esquerda: 1-12 -->
+          <!-- Row 28: 1-4 -->
+          <rect x="62" y="124" width="92" height="39" rx="3" fill="#DCDCE0" stroke="#C4C4C4" stroke-width="0.5"/>
+          <text x="108" y="149" text-anchor="middle" fill="#444" font-size="20">1</text>
+          <rect x="158" y="124" width="90" height="39" rx="3" fill="#DCDCE0" stroke="#C4C4C4" stroke-width="0.5"/>
+          <text x="203" y="149" text-anchor="middle" fill="#444" font-size="20">2</text>
+          <rect x="62" y="165" width="92" height="38" rx="3" fill="#DCDCE0" stroke="#C4C4C4" stroke-width="0.5"/>
+          <text x="108" y="189" text-anchor="middle" fill="#444" font-size="20">3</text>
+          <rect x="158" y="165" width="90" height="38" rx="3" fill="#DCDCE0" stroke="#C4C4C4" stroke-width="0.5"/>
+          <text x="203" y="189" text-anchor="middle" fill="#444" font-size="20">4</text>
+          <!-- Row 29: 5-8 -->
+          <rect x="62" y="207" width="92" height="39" rx="3" fill="#DCDCE0" stroke="#C4C4C4" stroke-width="0.5"/>
+          <text x="108" y="232" text-anchor="middle" fill="#444" font-size="20">5</text>
+          <rect x="158" y="207" width="90" height="39" rx="3" fill="#DCDCE0" stroke="#C4C4C4" stroke-width="0.5"/>
+          <text x="203" y="232" text-anchor="middle" fill="#444" font-size="20">6</text>
+          <rect x="62" y="248" width="92" height="38" rx="3" fill="#DCDCE0" stroke="#C4C4C4" stroke-width="0.5"/>
+          <text x="108" y="272" text-anchor="middle" fill="#444" font-size="20">7</text>
+          <rect x="158" y="248" width="90" height="38" rx="3" fill="#DCDCE0" stroke="#C4C4C4" stroke-width="0.5"/>
+          <text x="203" y="272" text-anchor="middle" fill="#444" font-size="20">8</text>
+          <!-- Row 30: 9-12 -->
+          <rect x="62" y="290" width="92" height="39" rx="3" fill="#DCDCE0" stroke="#C4C4C4" stroke-width="0.5"/>
+          <text x="108" y="315" text-anchor="middle" fill="#444" font-size="20">9</text>
+          <rect x="158" y="290" width="90" height="39" rx="3" fill="#DCDCE0" stroke="#C4C4C4" stroke-width="0.5"/>
+          <text x="203" y="315" text-anchor="middle" fill="#444" font-size="20">10</text>
+          <rect x="62" y="331" width="92" height="38" rx="3" fill="#DCDCE0" stroke="#C4C4C4" stroke-width="0.5"/>
+          <text x="108" y="355" text-anchor="middle" fill="#444" font-size="20">11</text>
+          <rect x="158" y="331" width="90" height="38" rx="3" fill="#DCDCE0" stroke="#C4C4C4" stroke-width="0.5"/>
+          <text x="203" y="355" text-anchor="middle" fill="#444" font-size="20">12</text>
+          <!-- ===== CELULAS BLUE FIT (direita) - 18 total ===== -->
+          <!-- Row 27 direita: 3 sub-rows x 2 cols = 6 celulas -->
+          <rect x="294" y="8" width="118" height="35" rx="3" fill="#003087"/>
+          <text x="353" y="30" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <rect x="416" y="8" width="116" height="35" rx="3" fill="#003087"/>
+          <text x="474" y="30" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <rect x="294" y="45" width="118" height="35" rx="3" fill="#003087"/>
+          <text x="353" y="67" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <rect x="416" y="45" width="116" height="35" rx="3" fill="#003087"/>
+          <text x="474" y="67" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <rect x="294" y="82" width="118" height="36" rx="3" fill="#003087"/>
+          <text x="353" y="104" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <rect x="416" y="82" width="116" height="36" rx="3" fill="#003087"/>
+          <text x="474" y="104" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <!-- Row 28 direita: 4 celulas -->
+          <rect x="294" y="124" width="118" height="39" rx="3" fill="#003087"/>
+          <text x="353" y="149" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <rect x="416" y="124" width="116" height="39" rx="3" fill="#003087"/>
+          <text x="474" y="149" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <rect x="294" y="165" width="118" height="38" rx="3" fill="#003087"/>
+          <text x="353" y="189" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <rect x="416" y="165" width="116" height="38" rx="3" fill="#003087"/>
+          <text x="474" y="189" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <!-- Row 29 direita: 4 celulas -->
+          <rect x="294" y="207" width="118" height="39" rx="3" fill="#003087"/>
+          <text x="353" y="232" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <rect x="416" y="207" width="116" height="39" rx="3" fill="#003087"/>
+          <text x="474" y="232" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <rect x="294" y="248" width="118" height="38" rx="3" fill="#003087"/>
+          <text x="353" y="272" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <rect x="416" y="248" width="116" height="38" rx="3" fill="#003087"/>
+          <text x="474" y="272" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <!-- Row 30 direita: 4 celulas (ultima com borda tracejada) -->
+          <rect x="294" y="290" width="118" height="39" rx="3" fill="#003087"/>
+          <text x="353" y="315" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <rect x="416" y="290" width="116" height="39" rx="3" fill="#003087"/>
+          <text x="474" y="315" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <rect x="294" y="331" width="118" height="38" rx="3" fill="#003087"/>
+          <text x="353" y="355" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
+          <rect x="416" y="331" width="116" height="38" rx="3" fill="#003087" stroke="#FFD700" stroke-width="1.5" stroke-dasharray="4,3"/>
+          <text x="474" y="355" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="700">BLUE FIT</text>
         </svg>
       </div>
 
